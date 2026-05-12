@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<div class="bg-shape-top"></div>
+
+<div class="header">
+  <span class="logo">☀</span>
+  <span class="logo-text">wellbeing</span>
+</div>
+
+<div class="content">
+
+<h2 class="section-title">
+Planner
+</h2>
+
+<input
+type="text"
+id="taskInput"
+placeholder="Task name">
+
+<input
+type="date"
+id="taskDate">
+
+<select id="taskPriority">
+  <option value="High">🔴 High Priority</option>
+  <option value="Medium">🟠 Medium Priority</option>
+  <option value="Low">🟢 Low Priority</option>
+</select>
+
+<button class="button" onclick="addTask()">
+Add Task
+</button>
+
+<br><br>
+
+<div id="taskList">
+
+<div class="task">
+  <strong>Finish coding assignment</strong><br>
+  Due: 15th June<br>
+  Priority:
+  <span style="color:red; font-weight:bold;">High</span>
+</div>
+
+<div class="task">
+  <strong>Revise for maths test</strong><br>
+  Due: 18th June<br>
+  Priority:
+  <span style="color:orange; font-weight:bold;">Medium</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="navbar">
+<a class="nav-item" href="home.html"><span>⌂</span>Home</a>
+<a class="nav-item" href="mood.html"><span>♡</span>Mood</a>
+<a class="nav-item" href="community.html"><span>💬</span>Community</a>
+<a class="nav-item" href="events.html"><span>📅</span>Events</a>
+<a class="nav-item" href="settings.html"><span>⚙</span>Settings</a>
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
