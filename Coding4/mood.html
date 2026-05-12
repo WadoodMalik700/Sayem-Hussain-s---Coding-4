@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mood Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<div class="bg-shape-top"></div>
+
+<div class="header">
+  <span class="logo">☀</span>
+  <span class="logo-text">wellbeing</span>
+</div>
+
+<div class="content">
+
+<h2 class="section-title">Mood tracker</h2>
+
+<div class="card purple">
+
+<div class="card-title">
+  How are you feeling today?
+</div>
+
+<div class="mood-row">
+
+<button class="mood-btn"
+onclick="setMood('Excellent',5)">
+😁
+</button>
+
+<button class="mood-btn"
+onclick="setMood('Good',4)">
+🙂
+</button>
+
+<button class="mood-btn"
+onclick="setMood('Okay',3)">
+😐
+</button>
+
+<button class="mood-btn"
+onclick="setMood('Bad',2)">
+🙁
+</button>
+
+<button class="mood-btn"
+onclick="setMood('Terrible',1)">
+😭
+</button>
+
+</div>
+
+</div>
+
+<div class="card green">
+  <div class="card-title">
+    Recent mood log
+  </div>
+
+  <p id="result">
+    No mood selected
+  </p>
+</div>
+
+<div class="card blue">
+
+<div class="card-title">
+  Mood Graph
+</div>
+
+<canvas id="moodChart"></canvas>
+
+</div>
+
+</div>
+
+<div class="navbar">
+
+<a class="nav-item" href="home.html">
+<span>⌂</span>Home
+</a>
+
+<a class="nav-item" href="mood.html">
+<span>♡</span>Mood
+</a>
+
+<a class="nav-item" href="community.html">
+<span>💬</span>Community
+</a>
+
+<a class="nav-item" href="events.html">
+<span>📅</span>Events
+</a>
+
+<a class="nav-item" href="settings.html">
+<span>⚙</span>Settings
+</a>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
