@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Events</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<div class="bg-shape-top"></div>
+
+<div class="header">
+<span class="logo">☀</span>
+<span class="logo-text">wellbeing</span>
+</div>
+
+<div class="content">
+
+<h2 class="section-title">
+Events
+</h2>
+
+<input
+type="text"
+id="eventName"
+placeholder="Event name">
+
+<input
+type="date"
+id="eventDate">
+
+<input
+type="text"
+id="eventTime"
+placeholder="Event time">
+
+<input
+type="number"
+id="eventSpaces"
+placeholder="Available spaces">
+
+<button class="button" onclick="addEvent()">
+Add Event
+</button>
+
+<br><br>
+
+<div id="eventList">
+
+<div class="card yellow">
+<div class="card-title">Pizza Party</div>
+<div class="card-text">
+18 June • 6PM
+</div>
+<p id="pizzaSpaces">
+Spaces left: 10
+</p>
+<button class="button small-btn"
+onclick="toggleRegister('pizzaSpaces')">
+Register / Unregister
+</button>
+</div>
+
+<div class="card blue">
+<div class="card-title">Gaming Night</div>
+<div class="card-text">
+22 June • 8PM
+</div>
+<p id="gamingSpaces">
+Spaces left: 8
+</p>
+<button class="button small-btn"
+onclick="toggleRegister('gamingSpaces')">
+Register / Unregister
+</button>
+</div>
+
+<div class="card green">
+<div class="card-title">Study Session</div>
+<div class="card-text">
+25 June • 4PM
+</div>
+<p id="studySpaces">
+Spaces left: 12
+</p>
+<button class="button small-btn"
+onclick="toggleRegister('studySpaces')">
+Register / Unregister
+</button>
+</div>
+
+</div>
+
+</div>
+
+<div class="navbar">
+<a class="nav-item" href="home.html"><span>⌂</span>Home</a>
+<a class="nav-item" href="mood.html"><span>♡</span>Mood</a>
+<a class="nav-item" href="community.html"><span>💬</span>Community</a>
+<a class="nav-item" href="events.html"><span>📅</span>Events</a>
+<a class="nav-item" href="settings.html"><span>⚙</span>Settings</a>
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
