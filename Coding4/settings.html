@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Settings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<div class="bg-shape-top"></div>
+
+<div class="header">
+  <span class="logo">☀</span>
+  <span class="logo-text">wellbeing</span>
+</div>
+
+<div class="content">
+
+<h2 class="section-title">Settings</h2>
+
+<div class="card white">
+
+<div class="setting-row">
+  <span>Dark Mode</span>
+  <button class="button small-btn" onclick="toggleDarkMode()">
+    Toggle
+  </button>
+</div>
+
+<div class="setting-row">
+  <span>Text Size</span>
+
+  <select onchange="changeTextSize(this.value)">
+    <option value="medium">Medium</option>
+    <option value="small">Small</option>
+    <option value="large">Large</option>
+  </select>
+</div>
+
+<div class="setting-row">
+  <span>Notifications</span>
+  <button class="button small-btn">On</button>
+</div>
+
+<div class="setting-row">
+  <span>Privacy</span>
+  <button class="button small-btn">Manage</button>
+</div>
+
+</div>
+
+<br>
+
+<button class="button" onclick="logout()">
+  Sign Out
+</button>
+
+</div>
+
+<div class="navbar">
+  <a class="nav-item" href="home.html">
+    <span>⌂</span>Home
+  </a>
+
+  <a class="nav-item" href="mood.html">
+    <span>♡</span>Mood
+  </a>
+
+  <a class="nav-item" href="community.html">
+    <span>💬</span>Community
+  </a>
+
+  <a class="nav-item" href="events.html">
+    <span>📅</span>Events
+  </a>
+
+  <a class="nav-item" href="settings.html">
+    <span>⚙</span>Settings
+  </a>
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
